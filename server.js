@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 mongoose
-  .connect(process.env.MONGO_URI)
+  .connect(process.env.CONNECTION_STRING)
   .then(() => console.log("Database is connected..."))
   .catch((err) => console.log(err));
 
