@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - GeoCraftMaps
+name: Build and deploy Node.js app to Azure Web App - azuredeploytest123
 
 on:
   push:
@@ -59,10 +59,10 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'GeoCraftMaps'
+          app-name: 'azuredeploytest123'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8941A85804FF42A1A7E4C071AF6D95B8 }}
-          package: release.zip
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1A35BDD548D04C65B45F20A5997D8E37 }}
+          package: .
           
       - name: 'Delete Zip'
         run: rm release.zip
