@@ -12,7 +12,7 @@ app.use(cors());
 mongoose
   .connect(process.env.CONNECTION_STRING)
   .then(() => console.log("Database is connected..."))
-  .catch((err) => console.log(err));
+  .catch((err) => console.log("DB NOT WORKINGGGGGGG"));
 
 //db schema
 const userSchema = mongoose.Schema({
